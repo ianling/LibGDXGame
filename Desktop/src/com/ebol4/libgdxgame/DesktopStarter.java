@@ -1,0 +1,16 @@
+package com.ebol4.libgdxgame;
+
+import com.badlogic.gdx.backends.lwjgl.LwjglApplicationConfiguration;
+import com.badlogic.gdx.backends.lwjgl.LwjglApplication;
+
+public class DesktopStarter {
+    public static void main(String[] args) {
+        LwjglApplicationConfiguration cfg = new LwjglApplicationConfiguration();
+        cfg.title = "LibGDX Game";
+        cfg.useGL20 = true;
+        cfg.width = 800;
+        cfg.height = 600;
+        new LwjglApplication(new LibGDXGame(), cfg);
+
+    }
+}
